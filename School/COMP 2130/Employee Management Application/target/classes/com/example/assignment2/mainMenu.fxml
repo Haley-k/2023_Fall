@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<TabPane fx:id="tabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment2.MainController">
+  <tabs>
+    <Tab text="Employee">
+         <content>
+            <SplitPane dividerPositions="0.7" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <ListView fx:id="empList" layoutX="167.0" layoutY="34.0" prefHeight="248.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="347.0" prefWidth="600.0">
+                     <children>
+                        <Button fx:id="empAddBtn" layoutX="20.0" layoutY="14.0" mnemonicParsing="false" onAction="#empAddBtnClick" text="Add" />
+                        <Button fx:id="empViewBtn" layoutX="154.0" layoutY="14.0" mnemonicParsing="false" onAction="#empViewBtnClick" text="View" />
+                        <Button fx:id="empModifyBtn" layoutX="371.0" layoutY="14.0" mnemonicParsing="false" onAction="#empModifyBtnClick" text="Modify" />
+                        <Button fx:id="empDeleteBtn" layoutX="515.0" layoutY="14.0" mnemonicParsing="false" onAction="#empDeleteBtnClick" text="Delete" />
+                        <TextField fx:id="empIdField" layoutX="211.0" layoutY="58.0" promptText="Enter Employee Id:" />
+                        <Text fx:id="empMessageLabel" fill="#ff2222" layoutX="262.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Message" textAlignment="CENTER" />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </content></Tab>
+      <Tab text="Department">
+         <content>
+            <SplitPane dividerPositions="0.7" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <ListView fx:id="depList" layoutX="143.0" layoutY="28.0" prefHeight="242.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                         <Button fx:id="depAddBtn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#depAddBtnClick" text="Add" />
+                         <Button fx:id="depViewBtn" layoutX="122.0" layoutY="14.0" mnemonicParsing="false" onAction="#depViewBtnClick" text="View" />
+                         <Button fx:id="depDeleteBtn" layoutX="258.0" layoutY="14.0" mnemonicParsing="false" onAction="#depDeleteBtnClick" text="Delete" />
+                        <TextField fx:id="depIdField" layoutX="393.0" layoutY="14.0" promptText="Enter Department Id:" />
+                        <Text fx:id="depMessageLabel" fill="#ff2222" layoutX="72.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Message" textAlignment="CENTER" />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </content>
+      </Tab>
+    <Tab text="Payroll">
+         <content>
+            <SplitPane dividerPositions="0.7" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <ListView fx:id="payrollList" layoutX="189.0" layoutY="30.0" prefHeight="260.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Button fx:id="payrollCalculateBtn" layoutX="28.0" layoutY="26.0" mnemonicParsing="false" onAction="#payrollCalculateBtnClick" text="Calculate" />
+                        <Button fx:id="payrollViewDepBtn" layoutX="144.0" layoutY="26.0" mnemonicParsing="false" onAction="#payrollViewDepBtnClick" text="View For Department" />
+                         <Button fx:id="payrollViewBtn" layoutX="317.0" layoutY="26.0" mnemonicParsing="false" onAction="#payrollViewBtnClick" text="View All Payroll" />
+                         <Button fx:id="payrollViewEmpBtn" layoutX="443.0" layoutY="26.0" mnemonicParsing="false" onAction="#payrollViewEmpBtnClick" text="View For Employee" />
+                         <TextField fx:id="payrollIdField" layoutX="269.0" layoutY="64.0" promptText="Enter Id:" />
+                         <Text fx:id="payrollMessageLabel" fill="#ff2222" layoutX="38.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meesage" textAlignment="CENTER" />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </content></Tab>
+  </tabs>
+</TabPane>

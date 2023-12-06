@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="Add Department" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment2.AddDepController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <Text fx:id="addDepNameLabel" layoutX="48.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" />
+            <TextField fx:id="addDepNameField" layoutX="150.0" layoutY="50.0" />
+            <Text fx:id="addDepMaxPplLabel" layoutX="48.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Max People:" />
+            <TextField fx:id="addDepMaxPplField" layoutX="149.0" layoutY="112.0" />
+            <Button fx:id="addDepAddBtn" layoutX="65.0" layoutY="198.0" mnemonicParsing="false" onAction="#addDepAddBtnClick" text="Add" />
+            <Button fx:id="AddDepBackBtn" layoutX="185.0" layoutY="198.0" mnemonicParsing="false" onAction="#addDepBackBtnClick" text="Back" />
+             <Text fx:id="addDepMessageLabel" fill="#ff2222" layoutX="114.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Message" textAlignment="CENTER" />
+
+         </children></AnchorPane>
+  </content>
+</TitledPane>

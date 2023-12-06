@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="Calculate Payroll:" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment2.PayController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <Separator layoutX="195.0000000000001" layoutY="-10.6" orientation="VERTICAL" prefHeight="389.0" prefWidth="86.0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="-21.0" />
+            <ListView fx:id="calculatePayrollList" layoutX="240.4000000000001" layoutY="24.4" prefHeight="343.0" prefWidth="336.0" AnchorPane.bottomAnchor="16.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="14.0" />
+             <Text fx:id="payrollEmpIdLabel" layoutX="14.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Id:" />
+             <TextField fx:id="PayrollEmpIdField" layoutX="112.0" layoutY="51.0" prefHeight="26.0" prefWidth="121.0" />
+             <Text fx:id="payrollHoursWorkedLabel" layoutX="14.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hours Worked:" />
+             <TextField fx:id="PayrollHoursWorkedField" layoutX="112.0" layoutY="104.0" prefHeight="26.0" prefWidth="121.0" />
+             <Button fx:id="CalcPayrollCalculateBtn" layoutX="27.0" layoutY="148.0" mnemonicParsing="false" onAction="#calcPayrollCalculateBtnClick" text="Calulate" />
+             <Button fx:id="calcPayrollBackBtn" layoutX="141.0" layoutY="148.0" mnemonicParsing="false" onAction="#calcPayrollBackBtnClick" text="Back" />
+             <Text fx:id="calcPayrollMessageLabel" fill="#ff2222" layoutX="24.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Message" />
+         </children></AnchorPane>
+  </content>
+</TitledPane>
